@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 1</title>
+</head>
+<body>
+    <?php
+
+    echo "Exercicios 1<br>";
+    // Desenvolva um programa PHP, que executa uma contagem entre 0 e 10 e conta
+    // quais numeros são pares e quantos numeros são imapres, no final o programa
+    // deve imprimir na tela o resultado.  
+    // Exemplo de saída: 
+    // 3 número são pares [2,6,8]
+    // 1 número são impares [3]
+    $numero =0;
+    $par = 0;
+    $impar =0;
+
+    while($numero <= 10 ){
+        
+        if($numero % 2 == 0){
+            echo "<br>Numero par: $numero";
+            $par++;
+        };
+        if($numero % 2 != 0){
+            echo "<br>Numeros impar: $numero";
+            $impar++;
+        };
+        $numero++;      
+    };
+    echo "<br>Ente 0 e 10 exitem $par numeros pares";
+    echo "<br>Ente 0 e 10 exitem $impar numeros imppares";
+
+    echo "<br/><hr/>";	
+
+    echo "Exercicios 2<br>";
+// Desenvolva um programa PHP, que indentifica os numeros que são multiplo
+// por 2, 3 e 5 entre 10 e 50 no final do processamento esse resultado deve
+// ser imprimido na tela;
+
+$numero = 10;
+echo "<p>Numeros multiplos de 2 ==> ";
+do {
+    if($numero % 2 == 0) {
+    echo $numero.', ';
+    }
+$numero++;
+} while($numero <=50);
+
+
+$numero = 10;
+echo "<p>Numeros multiplos de 3: ==> ";
+do {
+    if($numero % 3 == 0) {
+        echo $numero.', ';
+    }
+$numero++;
+} while($numero <=50);
+
+
+
+$numero = 10;
+echo "<p>Numeros multiplos de 5 ==> ";
+do {
+    if($numero % 5 == 0) {
+        echo $numero.', ';
+    }
+$numero++;
+} while($numero <=50);
+
+
+echo "<hr><br>Exercicios 3<br>";
+
+// Crie um programa que gera automaticamente os dados de uma pessoa e insere essas informações em um array,
+// após inserir no array. O programa deve analisar quantas pessoas são do genero Masculino, quantas pessoas
+// do genero masculino tem idade acima de 20 anos e quantos deles tem mais de 50 anos, no final deve ser feito
+// um relatorio com a analise feita desses dados e imprimir na tela. obs: a quantidade de pessoas gerada
+// automaticamente é por criterio de vocês pode ser 5, 10, ou 30, fica a criterio de vocês;
+// Uma Dica Usem a função do php rand(min, max) para gerar os dados automaticamente e adicionar no array de pessoas
+
+$pessoa = array(
+ $pessoa = ['Norton', '50', 'Masculino'];
+ $pessoa = ['Carlos', '20', 'Masculino'];
+ $pessoa = ['Bento', '51', 'Masculino'];
+ $pessoa = ['Norton', '50', 'Masculino'];
+ $pessoa = ['Xanaina', '23', 'Feminino'];
+
+ $frutas = array (
+    "frutas"  => array("a" => "laranja", "b" => "banana", "c" => "maçã"),
+    "numeros" => array(1, 2, 3, 4, 5, 6),
+    "buracos" => array("primeiro", 5 => "segundo", "terceiro")
+);
+
+
+print_r($pessoa);
+
+// $pessoa = rand(0,4);
+// echo "<br> $pessoa";
+$indice = rand(0,5);
+
+echo $indice;
+//echo "<hr><br> $pessoa[$indice][2]";
+
+
+if($pessoa[$indice] == "Masculino"){
+    echo "Entrou no foreach";
+    // if($indice == "Masculino"){
+    //     echo "Masculino";
+    // };
+};
+
+// for( $i = 0; $i ==; $i++ ) {
+//     echo $pessoa[$i]."<br>";
+// }
+
+// $numeroAleatorio = rand(1, 10);
+// echo "Número Aleatório: $numeroAleatorio";
+
+?>    
+</body>
+</html>
