@@ -6,13 +6,17 @@
     <title>Cadastro</title>
 </head>
 <body>
-    <h2>Cadastro de Usuario<br><hr></h2>
+    <h1>Cadastro de Usuario<br><hr></h1>
     
 <form>
-    Preencha os campos <br><br>
+    <h4>Preencha os campos </h4><br><br>
     Nome: <input type="text"><br>
+    Login: <input type="text"><br>
+    Senha: <input type="password"><br>
+
     Telefone: <input type="text"><br>
-    Endereco: <input type="text"><br>
+    Telefone 2: <input type="text"><br>
+    CEP: <input type="text"><br>
     Numero: <input type="text"><br>
     Bairro: <input type="text"><br>
     Complemento: <input type="text"><br>

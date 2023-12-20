@@ -1,7 +1,10 @@
 <?php
 
+//Exibir o caminho do arquio
+var_dump(__DIR__);
+
 // include('./insert.php');
-include('./modulo/buscar.php');
+include('./modulo_mysql/buscar.php');
 // include('./update.php');
 // include('./delete.php');
 

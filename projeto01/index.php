@@ -8,11 +8,13 @@
 </head>
 
 <body>
+    
     <h1>Pagina Inicial<br><hr></h1>
     <a href="cadastro.php">Cadastrar</a>
     <a href="vizualizar.php">Vizualizar</a>
 
-    
+
+
 
 
 <?php
